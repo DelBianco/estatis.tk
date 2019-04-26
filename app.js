@@ -16,13 +16,13 @@ router.get("/",function(req,res){
     res.sendFile(path + "index.html");
 });
 
-router.get("/sharks",function(req,res){
-    res.sendFile(path + "sharks.html");
+router.get("/api",function(req,res){
+    res.json({ message: 'hooray! welcome to our api!' });
 });
 
 app.use(express.static(path));
 app.use("/", router);
 
 app.listen(8080, function () {
-    console.log('Example app listening on port 8080!')
+    console.log('Estatis.tk running on port 8080!')
 })
