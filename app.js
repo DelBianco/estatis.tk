@@ -17,7 +17,7 @@ router.get("/",function(req,res){
 });
 
 router.get("/api",function(req,res){
-    res.json({ message: 'hooray! welcome to our api!' });
+    res.json({ message: 'API LIVES' });
 });
 
 app.use(express.static(path));
