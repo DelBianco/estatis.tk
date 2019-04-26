@@ -1,0 +1,18 @@
+{
+  "name": "estatis.tk",
+  "version": "1.0.0",
+  "description": "Node Web System to Study: Thermodynamics and Statistical Physics",
+  "author": "André Del Bianco Giuffrida",
+  "license": "MIT",
+  "main": "app.js",
+  "keywords": [
+    "phisics",
+    "statistics",
+    "node",
+    "math",
+    "thermodinamics"
+  ],
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
