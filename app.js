@@ -18,14 +18,13 @@ router.get("/", function (req, res) {
     res.sendFile(path + "index.html");
 });
 
-
 var est = new Estatistk();
 
 router.get("/api", function (req, res) {
-    res.json({endpoint: est.endpoints()});
+    res.json({endpoint: est.endpoints});
 });
 
-est.endpoints().forEach(function (endpoint) {
+est.endpoints.forEach(function (endpoint) {
     console.log(endpoint);
     router.get("/api/"+endpoint, function (req, res) {
         res.json({data: est.data(endpoint)});
@@ -37,4 +36,4 @@ app.use("/", router);
 
 app.listen(8088, function () {
     console.log('Estatis.tk running on port 8088!')
-})
+});

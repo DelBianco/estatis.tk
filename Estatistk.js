@@ -3,9 +3,7 @@ function Estatistk() {
 
 }
 // class methods
-Estatistk.prototype.endpoints = function() {
-    return ['set1','set2'];
-};
+Estatistk.prototype.endpoints = ['set1','set2'];
 
 Estatistk.prototype.data = function(endpoint){
     if(endpoint === 'set1'){
